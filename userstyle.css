@@ -1,5 +1,5 @@
 /* For styling the rendered Markdown */
-/*** General Line Heights **************************************/
+/*** General Line Heights ****************************/
 h1, h2, h3, h4, h5, h6 {
 	padding-top: 1em;
 }
@@ -12,7 +12,7 @@ li ul {
     margin-bottom: 0.3em;
 }
 
-/*** Fine tune Striketrough Line **************************************/
+/*** Finetune Striketrough Line **********************/
 s {
     display: inline-block;
     text-decoration: none;
@@ -29,9 +29,9 @@ s:after {
     border-bottom: 1px solid;
 }
 
-/*** Code **************************************/
+/*** Code ********************************************/
 .hljs, .inline-code{
-    background-color: rgb(0 0 0 / 4%);
+    background-color: rgb(0 0 0 / 3%);
     border-radius: .25em;
 	padding: 0.1em 0.35em;
 	border: none;
@@ -39,10 +39,13 @@ s:after {
 .hljs {
     padding: 0em 0.35em;
 }
+.inline-code{
+	background-color: rgb(0 0 0 / 6%);
+}
 
 
 
-/*** Links to internal notes ***********************************/
+/*** Links to Internal Notes *************************/
 /* .resource-icon .fa-joplin::before{content: "↦";}
 .resource-icon.fa-joplin {
 	-webkit-mask: none;
@@ -62,7 +65,7 @@ a[href="#"]::after {
 	text-decoration: white underline;
 }
 
-/*** Admonition Plugin Title Icons *****************************/
+/*** Admonition Plugin Title Icons *******************/
 div.admonition.abstract p.admonition-title::before {
 	content: "👓 ";
 }
@@ -98,4 +101,4 @@ div.admonition.example p.admonition-title::before {
 }	
 div.admonition.quote p.admonition-title::before {
 	content: "❞ ";
-}	
+}
